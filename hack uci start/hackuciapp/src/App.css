@@ -1,0 +1,151 @@
+html, body, .container {
+  height: 100vh;
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+      background-image: linear-gradient(to right, #ff7b5c , #ff6c81);
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+  }
+  form{ 
+    height:50%;
+    width:40%;
+  }
+  img {
+    height:40%;
+    width:20%;
+    animation-iteration-count: infinite;
+    animation-name: amogtall;
+    animation-duration: .5s;
+  }
+  label{
+    width: 30vw;
+  }
+}
+
+form{
+  position: relative;
+  background-color:white;
+  display: inline;
+  margin : 5vh;
+  padding: 3vh 1vw;
+}
+
+Button {
+  top: 30vh;
+  position: absolute;
+  height:5vh;
+  padding: 0vh 0px;
+  font-size: 5vh;
+  font-size: 2vh!important;
+}
+
+#errormsg {
+  top: 36vh;
+  position: absolute;
+  height:5vh;
+  padding: 0vh 0px;
+  font-size: 5vh;
+  font-size: 2vh!important;
+}
+
+label {
+  font-size: 2vh;
+  height:2vh;
+  padding: 1vh 0px;
+}
+
+.formone {
+  position: absolute;
+  top: 5vh; 
+}
+
+.formtwo {
+  position: absolute;
+  top: 13vh; 
+}
+
+.formthree {
+  position: absolute;
+  top: 20vh; 
+}
+
+.form-control {
+  position: absolute;
+  height: 3vh;
+  font-size: 2vh!important;
+  padding: 1vh 0px;
+}
+
+
+@media only screen and (orientation: portrait) {
+  body {
+      background-image: linear-gradient(to bottom, #ff7b5c , #ff6c81);
+      margin: 0;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+  }
+  .container {
+    display: flex; /* or inline-flex */
+    flex-direction: column;
+    align-items: center;
+    gap: 10% 50%;
+  }
+  form {
+    height:55vh;
+    width:80vw;
+  }
+  img {
+    height:20vh;
+    width: 15vw;
+    animation-iteration-count: infinite;
+    animation-name: amogfat;
+    animation-duration: .5s;
+  }
+  label{
+    width: 70vw;
+  }
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+
+@keyframes amogtall {
+  0% {
+    height:40%;
+  }
+  33% {
+    height:35%
+  }
+  66% {
+    height:45%;
+  }
+  100% {
+    height: 40%;
+  }
+}
+
+@keyframes amogfat {
+  0% {
+    width:15em;
+  }
+  33% {
+    width:20em;
+  }
+  66% {
+    width:10em;
+  }
+  100% {
+    width: 15em;
+  }
+}
+
